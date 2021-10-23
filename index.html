@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" > </i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PROJECT</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">ABOUT ME</a></li>
+                        <li><a href="">CONTECT ME</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-sort-desc" onclick="showMenu" ></i>
+
+            </nav>
+            <div class="text-box">
+                <h1>A Computer Engenieer, An IT Enthusiast u can call me whatever u want</h1>
+                <p>This one is my one of the 1st project that i made in oviously in pressure of something because i m little lazy.</p>
+                <a href="" class="main-btn">Click On This To Know Me More</a>
+            </div>
+
+        </section>
+        <section class="project">
+            <h1>
+                Projects
+            </h1>
+            <p>Projects</p>
+            <div class="row">
+                <div class="project-col">
+                    <h3>Portfolio</h3>
+                    <p>Its a simple CV based on HTML or CSS</p>
+                </div>
+                <div class="project-col">
+                    <h3>Calculator</h3>
+                    <p>Its a Java based project.</p>
+                </div>
+                <div class="project-col">
+                    <h3>Dice Simulator</h3>
+                    <p>Its a Dice Simulator web-page based on HTML, CSS or JAVA SCRIPT</p>
+                </div>
+            </div>
+
+
+        </section>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
